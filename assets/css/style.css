@@ -1,0 +1,342 @@
+@import url("variable.css");
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    /* src: url("../fonts/eot/iranyekanwebboldfanum.eot"); */
+    src: url("../font/iran/eot/iranyekanwebboldfanum.eot");
+    src: url("../font/iran/eot/iranyekanwebboldfanum.eot?#iefix") format("embedded-opentype"),
+        /* IE6-8 */
+        url("../font/iran/woff/iranyekanwebboldfanum.woff") format("woff"),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url("../font/iran/ttf/iranyekanwebboldfanum.ttf") format("truetype");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    direction: rtl;
+    text-align: right;
+    font-family: iranyekan;
+    background-color: var(--bg_color_1);
+}
+
+/* ====================== general ============= */
+p {
+    font-size: 1rem;
+    color: var(--text_color_2);
+}
+
+button {
+    font-family: iranyekan;
+    font-size: 1rem;
+    color: var(--text_color_2);
+}
+
+.fs_14px {
+    font-size: 0.875rem;
+}
+
+.fs_16px {
+    font-size: 1rem;
+}
+
+.fs_18px {
+    font-size: 1.125rem;
+}
+
+.fs_20px {
+    font-size: 1.25rem;
+}
+
+.fs_24px {
+    font-size: 1.5rem;
+}
+
+.fs_26px {
+    font-size: 1.625rem;
+}
+
+.sub_title {
+    color: var(--text_color_3);
+}
+
+.mb_1 {
+    margin-bottom: 1rem;
+}
+
+.text_center {
+    text-align: center;
+    ;
+}
+
+.img {
+    background-size: cover;
+    width: 100%;
+}
+
+.btn {
+    background-color: transparent;
+}
+
+/* ====================== end general ============= */
+
+/* ====================== nav ============= */
+.navbar {
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar_title {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.navbar_link ul {
+    display: flex;
+}
+
+.navbar_link li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.navbar_link li.active {
+    border-bottom: 2px solid var(--text_color_3);
+}
+
+.navbar_link li a {
+    text-decoration: none;
+    color: var(--text_color_2);
+    padding: 1rem;
+}
+
+.toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--bg_color_3);
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    .toggle {
+        display: flex;
+    }
+
+    .navbar_link {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        direction: ltr;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        text-align: center;
+    }
+
+    .navbar_link.active {
+        display: block;
+    }
+}
+
+/* ====================== end nav ============= */
+/* ====================== slider ============= */
+.swiper {
+    width: 100%;
+    height: 460px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================== end slider ============= */
+/* ===================== text2 section ============= */
+.text2_section {
+    background-color: var(--bg_color_2);
+}
+
+/* ===================== end text2 section ============= */
+/* ===================== video section  ============= */
+.video_section .box {
+
+    position: relative;
+    text-align: center;
+    background-color: var(--bg_color_3);
+}
+
+.video_section .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.video_section .text p {
+    color: var(--text_color_1);
+}
+
+.video_section img {
+    opacity: 0.5;
+    height: 25rem;
+}
+
+
+/* ===================== end video section ============= */
+/* ===================== gallery section ============= */
+.gallery img {
+    opacity: 0.5;
+}
+
+.gallery .col-4 {
+    margin-bottom: 1rem;
+}
+
+.gallery .box {
+    position: relative;
+    text-align: center;
+    background-color: var(--bg_color_3);
+}
+
+.gallery .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text_color_1);
+}
+
+/* ===================== end gallery section ============= */
+/* ===================== text 3 section ============= */
+.text3_section {
+    background-color: var(--bg_color_2);
+}
+
+.text3_section img {
+    opacity: 0.5;
+    margin: 1.5rem auto;
+    height: 260px;
+}
+
+.text3_section .col-4 {
+    margin-bottom: 1rem;
+}
+
+.text3_section .box {
+    position: relative;
+    text-align: center;
+}
+
+.text3_section .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text_color_1);
+}
+
+.text3_section .text p {
+
+    color: var(--text_color_1);
+}
+
+/* ===================== end text 3 section ============= */
+/* ===================== text 4 section ============= */
+@media only screen and (min-width: 768px) {
+    .text4_section .box:nth-child(even) {
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+
+    .text4_section .box:nth-child(odd) {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .text4_section .box .text:nth-child(even) {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        background-color: var(--bg_color_2);
+        padding: 1rem;
+        text-align: right;
+
+    }
+
+    .text4_section .box .text:nth-child(odd) {
+        position: absolute;
+        top: 22%;
+        right: 50%;
+        background-color: var(--bg_color_2);
+        padding: 1rem;
+        text-align: right;
+    }
+
+    .text4_section .box img {
+        width: 80%;
+        height: 35rem;
+        margin: 0 auto;
+    }
+}
+
+
+/* ===================== end text 4 section ============= */
+/* ===================== footer section ============= */
+.footer {
+    background-color: var(--bg_color_3);
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+.footer .item {
+    border-left: 1px solid rgba(255, 255, 255, .14);
+}
+
+.footer .copy_right {
+    text-align: left;
+}
+
+.footer p {
+    color: var(--text_color_1);
+}
+
+.footer hr {
+    opacity: 0.14;
+}
+
+/* ===================== end footer section ============= */
